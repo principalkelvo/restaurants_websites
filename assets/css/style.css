@@ -31,7 +31,33 @@
     padding: 1em;
 }
 .navbar .navbar-items li a{
-    color: rgb(212, 212, 212);
+    color: #d4d4d4;
     text-decoration: none;
+    padding-bottom: .5em;
+    transition: all .3s ease-in-out;
+}
+.navbar .navbar-items li a:hover{
+    color: #FFAC12;
+    border-bottom: 2px solid #FFAC12;
 }
 
+.buttons button{
+    background-color: #FFAC12;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: #FFAC12 0px 0px 0px 0px inset;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    font-weight: 500;
+    color: #000;
+    text-transform: capitalize;
+
+    transition: ease-out 0.3s;
+}
+
+.buttons button.dark{
+    background-color: #000;
+    color: #FFAC12;
+
+}
