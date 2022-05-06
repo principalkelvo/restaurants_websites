@@ -40,6 +40,10 @@
     color: #FFAC12;
     border-bottom: 2px solid #FFAC12;
 }
+/* no border on button */
+.navbar .navbar-items li a.buttons:hover{
+    border: none;
+}
 
 .buttons button{
     background-color: #FFAC12;
@@ -59,5 +63,19 @@
 .buttons button.dark{
     background-color: #000;
     color: #FFAC12;
+}
 
+.buttons button:hover,
+.buttons button:focus, 
+.buttons button:active {
+    box-shadow: inset 105px 0px 0 0 #000;
+    border: 1px solid #000;
+    color: #FFAC12 !important;
+}
+.buttons button.dark:focus, 
+.buttons button.dark:hover,
+.buttons button.dark:active {
+    box-shadow: inset 105px 0px 0 0 #FFAC12;
+    border: 1px solid #FFAC12;
+    color: #000 !important;
 }
