@@ -231,6 +231,11 @@ body {
     border-radius: 5px;
 }
 
+.card .companyDetails{
+    background: #fff;
+    border-radius: 0 0 20px 20px;
+}
+
 .card .image{
     height: 250px;
     /* box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35); */
@@ -243,4 +248,24 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+
+.card .title{
+    padding: 5px;
+}
+
+
+.card .details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #adadad;
+
+
+}
+.card .details p{
+    border-left: 1px solid #adadad;
+    border-right: 1px solid #adadad;
+    padding: 4px 22.2px;
 }
