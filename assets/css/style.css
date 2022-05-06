@@ -101,6 +101,7 @@ body{
     width: 100%;
     margin: 0 1em;
     padding: 0 2em;
+    display: flex;
 }
 .section .columns .column.is-6{
     width: 50%;
@@ -112,7 +113,7 @@ body{
     font-family: 'Adamina', serif;
     font-weight: 200;
     margin-bottom: 1em;
-    line-height: 1.1em;
+    line-height: 1.3em;
     overflow: hidden;
 }
 .section.hero .columns p.content{
@@ -140,4 +141,29 @@ body{
 /* paddings */
 .pl-0{
     padding-left: 0 !important;
+}
+
+.column .container{
+    width: 50%;
+    margin: 6em 0;
+}
+
+.column .container .title{
+    padding: 1em 0;
+    font-size: 2em;
+    font-family: 'Adamina', serif;
+}
+
+.buttons.is-large{
+    margin: 2em 0;
+}
+
+.buttons.is-large button{
+    border-radius: 0 10px 0 0;
+    padding: 1em 2em;
+}
+
+.buttons.is-large button i{
+    padding-left: 1em;
+
 }
