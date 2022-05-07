@@ -132,7 +132,7 @@ body {
     display: flex;
     align-items: center;
     /* height: 90vh; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .section .columns .column.is-6 {
@@ -180,6 +180,10 @@ body {
     padding-left: 0 !important;
 }
 
+.pt-0{
+    padding-top: 0 !important;
+}
+
 /* containers */
 .column .container {
     width: 50%;
@@ -224,6 +228,29 @@ body {
 }
 
 /* card */
+.hero-body.topMovers{
+    background: #adadad17;
+}
+
+.hero-body .hero-title {
+    padding: 2em;
+    font-size: 2em;
+    font-family: 'Adamina', serif;
+    position: relative;
+}
+
+.hero-body .hero-title::before {
+    content: "";
+    margin: 1em 0;
+    display: block;
+    width: 4em;
+    height: 5px;
+    border-radius: 1em;
+    background: linear-gradient(to right, #FAFF00, #000);
+    left: 0;
+    top: .5em;
+}
+
 .card {
     position: relative;
     margin: 1.5em;
