@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Adamina&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Actor', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Adamina', serif; */
+
+}
+
+body {
+    margin: 1.5em;
+}
+
+.navbar{
+    min-height:3.25rem;
+    /* background: linear-gradient(140deg, #000, #312407);   */
+    background: radial-gradient(#130d02 10%, #1b1403,#1d1401);  
+}
+.navbar .navbar-items{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 1em 10em;
+}
+.navbar .navbar-items li{
+    display: inline-block;
+    padding: 1em 1em 0;
+}
+
+.navbar .navbar-items li a {
+    color: #d4d4d4;
+    text-decoration: none;
+    padding-bottom: .5em;
+    transition: all .3s ease-in-out;
+}
+
+.navbar .navbar-items li a:hover {
+    color: #FAFF00;
+    border-bottom: .2em solid #FAFF00;
+}
+
+.navbar .companyNav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 10.2em 1em;
+    color: #fff;
+    
+}
+
+.navbar .companyNav h1{
+    font-size: 1.5em;
+    padding: 0 0 .5em;
+}
+.navbar .companyNav h2{
+    font-size: 1em;
+    color: #adadad;
+}
+.companyNav .cost{
+    text-align: right;
+}
+
+.section{
+    background: #adadad;
+}
+
+.buttons button {
+    background-color: #FFAC12;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: #FFAC12 0px 0px 0px 0px inset;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    font-weight: 500;
+    color: #000;
+    text-transform: capitalize;
+
+    transition: ease-out 0.3s;
+}
+
+.buttons.is-large {
+    margin: 2em 0;
+}
+
+.buttons.is-large button {
+    border-radius: 0 10px 0 0;
+    padding: 1em 2em;
+}
+
+.buttons.is-large button i {
+    padding-left: 1em;
+}
+
+.buttons.is-large button:hover,
+.buttons.is-large button:focus,
+.buttons.is-large button:active {
+    box-shadow: inset 12.5em 0px 0 0 #000;
+    border: 1px solid #000;
+    color: #FFAC12 !important;
+}
