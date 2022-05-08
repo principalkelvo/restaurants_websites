@@ -93,6 +93,10 @@ body {
 .buttons.is-large {
     margin: 2em 0;
 }
+.box .buttons.is-large  button{
+    width: 100%;
+    
+}
 
 .buttons.is-large button {
     border-radius: 0 10px 0 0;
@@ -161,12 +165,14 @@ body {
     display: flex;
 }
 
+
 .column .contact{
-    display: block;
-    border: 1px solid;
-    height: 20em;
-    box-shadow: 2px 4px;
+    width: 30%;
+    height: 28em;
+    border-radius:  10px;
+    box-shadow: 10px 12px 29px #bebebe, -12px -12px 24px #ffffff;
     padding: 1em;
+    margin: 0 1em;
 }
 
 .contact .head {
@@ -179,4 +185,18 @@ body {
 .input{
     display: flex;
     flex-direction: column;
+    margin: 1em;
 }
+.inputs .input input{
+    border-radius: 10px;
+    height: 2em;
+    border: 1px solid #3f3f3f;
+    padding: 0 1em;
+}
+.inputs .input.desc input{
+    height: 5em;
+}
+.inputs .input label{
+    display: none;
+}
+
