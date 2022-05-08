@@ -98,13 +98,31 @@ body {
     
 }
 
+.buttons button.dark {
+    background-color: #000;
+    color: #ffffff;
+    font-family: 500;
+}
+
+.buttons button.dark:hover,
+.buttons button.dark:focus,
+.buttons button.dark:active {
+    box-shadow: inset 16.5em 0px 0 0 #FFAC12 !important;
+    border: 1px solid #FFAC12 !important;
+    color: #000 !important;
+}
+
 .buttons.is-large button {
     border-radius: 0 10px 0 0;
     padding: 1em 2em;
 }
 
 .buttons.is-large button i {
+    color: #FFAC12;
     padding-left: 1em;
+}
+.buttons.is-large button.dark:hover i {
+    color: #000;
 }
 
 .buttons.is-large button:hover,
@@ -112,7 +130,7 @@ body {
 .buttons.is-large button:active {
     box-shadow: inset 12.5em 0px 0 0 #000;
     border: 1px solid #000;
-    color: #FFAC12 !important;
+    color: #FFAC12 ;
 }
 
 /* images  */
@@ -149,17 +167,7 @@ body {
     height: 100%;
 }
 
-.contact .head .image{
-    width: 2em;
-    height: 2em;
-    position: relative;
-}
 
-.contact .head .image img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
 
 .column{
     display: flex;
@@ -176,12 +184,52 @@ body {
 }
 
 .contact .head {
-    background: #adadad;
-    margin-bottom: 1em;
+    background: #bebebe2c;
     display: flex;
     align-items: center;
+    padding: .5em;
+    border-radius: 10px;
 }
 
+.contact .head .image.is-profile{
+    width: 3em;
+    height: 3em;
+    position: relative;
+    margin-right: 1em;
+
+
+}
+
+.contact .head .image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #adadad;
+
+    /* object-fit: cover; */
+}
+
+.head .info h1{
+    color: #000;
+    text-transform: capitalize;
+}
+
+.head .info a{
+    text-decoration: none;
+    color: #FFAC12;
+    transition: all .3s ease;
+}
+.head .info a:hover{
+    color: #000;
+}
+
+.contact .box{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
 .input{
     display: flex;
     flex-direction: column;
@@ -194,9 +242,97 @@ body {
     padding: 0 1em;
 }
 .inputs .input.desc input{
-    height: 5em;
+    height: 4em;
+}
+.inputs .input input::placeholder{
+    color: #000;
 }
 .inputs .input label{
     display: none;
 }
 
+/* footer  */
+.footer{
+    margin: 0 0 2em;
+    background: radial-gradient(#130d02 10%, #1b1403,#1d1401);
+
+}
+
+.footer .columns{
+    width: 100%;   
+}
+.footer .columns .column{
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer .footerTitle{
+    padding: 1em 7%;
+    width: 100%;
+}
+.footer .footerTitle p{
+    font-size: 2em;
+    color: #fff;
+}
+
+.footer .footerTitle p span{
+    color: #FAFF00;
+    font-size: 1em;
+
+}
+
+.footer .footerContent{
+    color: #fff;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #adadadde;
+    align-items: center;
+    padding: 3em;
+    padding-right: 0;
+
+}
+
+.footer .footerContent .socialIcons{
+    display: flex;
+    width: 15%;
+    justify-content: space-around;
+}
+
+.footer .footerContent .socialIcons i{
+    font-size: 1.5em;
+    transition: all .3s ease;
+}
+.footer .footerContent .socialIcons i:hover{
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+.footer .footerContent .footColumns{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+.footer .footerContent .footColumns .col-1 li a{
+    color: #adadadde;
+    font-size: .9em;
+    transition: all .3s ease;
+}
+.footer .footerContent .footColumns .col-1 li a:hover{
+    color: #fff;
+    cursor: pointer;
+}
+/* margins */
+.ml-0 {
+    margin-left: 0 !important;
+}
+
+/* paddings */
+.pl-0 {
+    padding-left: 0 !important;
+}
+
+.pt-0{
+    padding-top: 0 !important;
+}
