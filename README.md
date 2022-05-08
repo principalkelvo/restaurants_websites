@@ -1,7 +1,7 @@
 # Quick Movers page
 ***
 ## Creator :man_technologist:
-Moringa Landing Page was created and is maintained by **Kelvin Njoro**
+Quick Movers Page was created and is maintained by **Kelvin Njoro**
 * [Twitter](https://twitter.com/kelvinprincipal/)
 * [Github](https://github.com/principalkelvo/)
 * [Facebook](https://facebook.com/principal.kelvin1/)
